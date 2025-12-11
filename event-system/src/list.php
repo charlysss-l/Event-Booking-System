@@ -26,8 +26,8 @@ $result = $conn->query("SELECT * FROM users ORDER BY created_at DESC");
         <td><?= htmlspecialchars($row['email']) ?></td>
         <td><?= htmlspecialchars($row['created_at']) ?></td>
         <td>
-            <button href="update.php?id=<?= $row['id'] ?>">Edit</button>
-            <button class="delete-button" href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure?')">Delete</button>
+            <a class="edit" href="update.php?id=<?= $row['id'] ?>">Edit</a>
+            <a class="delete-button" href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
         </td>
     </tr>
     <?php endwhile; ?>
