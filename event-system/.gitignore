@@ -1,0 +1,10 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore vendor or node modules if you ever use them
+vendor/
+node_modules/
