@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->close();
 }
 ?>
-
+<main> 
 <h2>Add User</h2>
 <form method="post">
     <label>Name:</label>
@@ -32,5 +32,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <button type="submit">Add</button>
 </form>
-
+</main>
 <?php include 'footer.php'; ?>

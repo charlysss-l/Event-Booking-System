@@ -4,7 +4,7 @@ include 'header.php';
 
 $result = $conn->query("SELECT * FROM users ORDER BY created_at DESC");
 ?>
-
+<main>
 <h2>Users List</h2>
 <a href="create.php"><button>Add New User</button></a>
 
@@ -35,5 +35,5 @@ $result = $conn->query("SELECT * FROM users ORDER BY created_at DESC");
 <?php else: ?>
 <p>No users found.</p>
 <?php endif; ?>
-
+</main>
 <?php include 'footer.php'; ?>
