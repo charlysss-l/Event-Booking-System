@@ -10,7 +10,7 @@
 </head>
 <body>
     
- <nav>
+    <nav>
     <a href="index.php" class="logo">Event System</a>
         <a href="index.php">Home</a> 
         <a href="create.php">Add User</a>

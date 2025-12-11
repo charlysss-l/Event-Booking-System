@@ -22,22 +22,37 @@ main {
 
 /* Nav styling */
 nav {
+    width: 100%;
+    position: absolute; /* position over image */
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px 50px;
+    z-index: 10; /* make sure it's above the welcome overlay */
+    background: rgba(0, 0, 0, 0.3); /* semi-transparent background for readability */
+    box-sizing: border-box;
+    align-items: center;
     flex-wrap: wrap;
 }
-.logo {
-    color: green;
-}
+
 nav a {
-    margin-right: 15px;
+    color: #fff;
     text-decoration: none;
-    color: #333;
+    margin-left: 20px;
     font-weight: bold;
+    transition: color 0.3s;
 }
+
 nav a:hover {
-    color: #007BFF;
+    color: #FFD700;
 }
+
+nav .logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 /* Form styling */
 form {
     display: flex;
